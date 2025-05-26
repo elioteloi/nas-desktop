@@ -1,0 +1,29 @@
+html {
+    background-color: #E5E7EB;
+}
+
+#container-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#container-signin input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: #F5F5F5;
+    border-color: #ccc;
+    border-width: 1px;
+}
+
+#container-signin button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    border-color: white;
+}
