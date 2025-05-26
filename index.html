@@ -2,18 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>NAS</title>
+   
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://192.168.0.92:3000;">
+
+    <title>Drive</title>
   </head>
   <body>
-    <h1>NAS</h1>
+    <div id="container-signin">
+      <h1>Signin</h1>
+      <input type="text" placeholder="name" name="name" id="name">
+      <input type="email" placeholder="email" name="email" id="email">
+      <span id="errorSignIn"></span>
+      <input type="password" placeholder="password" name="password" id="password">
+      <button type="button" title="signin" id="signin">signin</button>
+      <button type="button" title="login" id="go-to-login">Go to login</button>
+    </div>
+    <script src="renderer/index.js"></script>
   </body>
 </html>
