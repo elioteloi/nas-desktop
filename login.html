@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+   
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://192.168.0.92:3000;">
+
+    <title>Drive</title>
+  </head>
+  <body>
+    <div id="container-signin">
+      <h1>Login</h1>
+      <input type="email" placeholder="email" name="emailLogin" id="emailLogin">
+      <span id="errorLogIn"></span>
+      <input type="password" placeholder="password" name="password" id="passwordLogin">
+      <button type="button" title="signin" id="signin">signin</button>
+      <button type="button" title="sigin" id="go-to-sigin">Go to sigin</button>
+    </div>
+    <script src="renderer/login.js"></script>
+  </body>
+</html>
