@@ -18,9 +18,7 @@ const createWindow = () => {
   data = true
   win.loadFile('home.html');
 
-  win.webContents.openDevTools(
-
-)}
+}
 
 app.whenReady().then(() => {
   createWindow()
