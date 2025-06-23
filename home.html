@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://192.168.0.92:3000;">
+    <link rel="stylesheet" href="styles/home.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://server:3000;">
 
     <title>Drive</title>
 </head>
 <body>
     <div>
-        <h1>Home Page</h1>
+       <div id="homeMenu">
+            <div id="menuPages">
+                <button id="buttonDrive">
+                    <img src="./images/server.png" id="logoButton" alt="" srcset="" height="30" width="30">
+                    <h2 id="titleButton">Drive</h2>
+                </button>
+                <button id="buttonProfile">
+                    <img src="./images/profile.png" id="logoButton" alt="" srcset="" height="30" width="30">
+                    <h2 id="titleButton">Profile</h2>
+                </button>
+                <label for="diskSpace" id="labelDiskSpace">Disk space 70%</label>
+                <progress value="70" max="100" id="diskSpace"></progress>
+            </div>
+            <div id="divInput">
+
+            </div>
+            <div id="divFolders">
+               
+            </div>
+            <div id="addFolder">
+                <button id="addFolderButton">+</button>
+            </div>
     </div>
+    <script src="renderer/home.js"></script>
 </body>
 </html>
