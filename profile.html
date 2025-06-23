@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/profile.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://server:3000;">
+
+    <title>Profile</title>
+</head>
+<body>
+    <div>
+       <div id="homeMenu">
+            <div id="menuPages">
+               <button id="buttonDrive">
+                    <img src="./images/server.png" id="logoButton" alt="" srcset="" height="30" width="30">
+                    <h2 id="titleButton">Drive</h2>
+                </button>
+                <button id="buttonProfile">
+                    <img src="./images/profile.png" id="logoButton" alt="" srcset="" height="30" width="30">
+                    <h2 id="titleButton">Profile</h2>
+                </button>
+                <label for="diskSpace" id="labelDiskSpace">Disk space 70%</label>
+                <progress value="70" max="100" id="diskSpace"></progress>
+            </div>
+                <div id="divProfile">
+                    <div id="divDataProfile">
+
+                    </div>
+                    <div id="divChangePassword">
+                        <input type="text" placeholder="Current Password" id="currentPassword">
+                        <input type="text" placeholder="New Password" id="newPassword">
+                        <div id="messagePasswordChange">
+
+                        </div>
+                        <button title="update password" id="updateUserPassword">Update password</button>
+                    </div>
+                    <div id="divLoggedOut">
+                        <button title="logged out" id="loggedOutModal">Logged out</button>
+                        
+                        <button title="Delete account" id="deleteAccountModal">Delete account</button>
+                    </div>
+                    <div id="loggedOutDiv"></div>
+                    <div id="deleteDiv"></div>
+                </div>
+                
+    </div>
+    </div>
+    <script src="renderer/profile.js"></script>
+</body>
+</html>
