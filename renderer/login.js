@@ -5,18 +5,15 @@ const button = document.getElementById("signin")
 const buttonGoToLogin = document.getElementById("go-to-sigin")
 
 button.addEventListener('click', () => {
-console.log(userEmail.value);
-console.log(userPassword.value);
+
 
 login(userEmail.value, userPassword.value)
-
-  console.log("click");
 
 })
 
 
 async function login(email, password) {
-    const response = await fetch(`http://${window.env.API_KEY}:3000/fetchUser`, {
+    const response = await fetch(`http://server:3000/fetchUser`, {
         method: "post",
         headers: {
              'Content-Type': 'application/json',
@@ -28,16 +25,30 @@ async function login(email, password) {
     })
 
     const json = await response.json()
-    console.log(json);
-    
+
     if (json.success) {
-        window.location.href = "/pages/home.html"
+        
+        const data = {
+            loggedIn: true,
+            id: json.id,
+            name: json.name,
+            email: json.email
+        }
+
+        let storage = JSON.stringify(data)
+
+        localStorage.setItem("user", storage)
+
+        window.location.href = "home.html"
+
     } else if (json.errorInput) {
         errorLogIn.innerHTML = json.errorInput
+
     } else if(json.errorEmail) {
         errorLogIn.innerHTML = json.errorEmail
+
     } else {
-        errorLogIn.innerHTML = json.errorPassword 
+        errorLogIn.innerHTML = json.errorPassword
     }
 }
 
