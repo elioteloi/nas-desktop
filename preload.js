@@ -1,5 +1,14 @@
-const { contextBridge } = require('electron');
+const { contextBridge, ipcRenderer } = require('electron');
 
-contextBridge.exposeInMainWorld('env', {
-  API_KEY: process.env.API_IP_ADDRESS,
-});
+const user = localStorage.getItem("user")
+const userParse = JSON.parse(user)
+
+
+contextBridge.exposeInMainWorld('user', {
+  ID: userParse.id,
+  NAME: userParse.name,
+  EMAIL: userParse.email,
+  LOGGEDIN: userParse.loggedIn
+})
+
+
