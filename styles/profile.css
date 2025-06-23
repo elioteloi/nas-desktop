@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+#divFolder {
+    border-color: grey;
+    border-radius: 8px;
+}
+
+button#buttonFolder:hover {
+    border-radius: 8px;
+    border: 0px;
+    background-color: #dddddd;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+#menuPages {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-right: 20px;
+    padding: 20px;
+    border-right: 1px solid #bdbdbd;
+}
+
+div#homeMenu {
+    display: flex;
+    
+}
+
+button#buttonDrive {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #F5F5F5;;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+button#buttonProfile {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 0px;
+    background-color:#0498E0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#logoButton {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+h2#titleButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+
+button#goBack {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+progress#diskSpace {
+    height: 25px;
+}
+
+#labelDiskSpace {
+    display: flex;
+    justify-content: center;
+}
+
+#diskSpace {
+    height: 25px;
+    width: auto;
+}
+
+input#currentPassword {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+    width: auto;
+    height: 18px;
+}
+
+input#newPassword {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+    width: auto;
+    height: 18px;
+}
+
+#updateUserPassword {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#loggedOutModal {
+    padding: 8px;
+    background-color: #ffa600;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+
+#divChangePassword {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#divLoggedOut {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#modalLoggedOut {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    display: grid;
+}
+
+#buttonLoggedOut {
+    padding: 8px;
+    background: #ffa600;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#deleteAccountModal {
+    padding: 8px;
+    background-color: #ff0101;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#modalDeleteAccount {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    display: grid;
+}
+
+#buttonDeleteAccount {
+    padding: 8px;
+    background: #ff0101;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
