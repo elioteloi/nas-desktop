@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+#divFolder {
+    border-color: #F5F5F5;
+    border-radius: 8px;
+}
+
+button#buttonFolder:hover {
+    border-radius: 8px;
+    border: 0px;
+    background-color: #dddddd;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+#menuPages {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-right: 20px;
+    padding: 20px;
+    border-right: 1px solid #bdbdbd;
+}
+
+div#homeMenu {
+    display: flex;
+    
+}
+
+button#buttonDrive {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #0498E0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#logoButton {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+button#buttonProfile {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 0px;
+    background-color:#F5F5F5;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h2#titleButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+button#buttonLoggedOut {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 20px;
+}
+
+#addFolderButton {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #0498E0;
+    border: none;
+}
+
+#modalFolder {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    display: grid;
+}
+
+input#inputFolder {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+    width: 185px;
+    height: 18px;
+}
+
+#buttonCreateFolder {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#goBack {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+
+
+
+#buttonFolder {
+    border-radius: 8px;
+    border: 0px;
+    background-color: #F5F5F5;
+    margin: 10px;
+    height: 150px;
+}
+
+#imageFolder {
+    width: 100px;
+}
+
+#divFolders {
+    display: flex;
+}
+
+#divButtons {
+    padding: 10px;
+}
+
+button#editName {
+    height: 39px;
+    width: 100px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #F5F5F5;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+button#deleteFolder {
+    height: 39px;
+    width: 100px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #F5F5F5;
+    font-size: 15px;
+}
+
+button#editName:hover {
+    height: 39px;
+    width: 100px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #dddddd;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+button#deleteFolder:hover {
+    height: 39px;
+    width: 100px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #dddddd;
+    font-size: 15px;
+}
+
+div#divButtons {
+    display: grid;
+    justify-content: center;
+}
+
+#labelDiskSpace {
+    display: flex;
+    justify-content: center;
+}
+
+#diskSpace {
+    height: 25px;
+    width: auto;
+}
+
+#divFolders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
