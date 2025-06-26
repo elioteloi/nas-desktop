@@ -29,7 +29,7 @@ A Front-End desktop app for a NAS (Network-attached storage) created in Electron
 
 ```bash
 git clone https://github.com/elioteloi/nas-desktop.git
-cd nas-deskto
+cd nas-desktop
 ```
 
 ### 2. Install dependencies
