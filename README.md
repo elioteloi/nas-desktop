@@ -40,6 +40,6 @@ npm install
 
 ### 3. Run the app
 
-``bash
+```bash
 npm start
 ```
