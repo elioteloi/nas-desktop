@@ -1,21 +1,24 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/folder.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://server:3000; img-src 'self' http://server:3000;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/folder.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; connect-src 'self' http://server:3000; img-src 'self' http://server:3000;"
+    />
 
     <title>Folder</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="buttons">
-        <button id="button-go-back">Go back to home</button>
-        <input type="file" name="photos" id="file" hidden>
-        <label for="file" id="file-upload">Choose a file</label>
-        <button type="button" id="upload">Upload</button>
+      <button id="button-go-back">Go back to home</button>
+      <input type="file" name="photos" id="file" hidden />
+      <label for="file" id="file-upload">Choose a file</label>
+      <button type="button" id="upload">Upload</button>
     </div>
     <div id="div-image"></div>
     <script src="./renderer/folder.js"></script>
-</body>
+  </body>
 </html>
