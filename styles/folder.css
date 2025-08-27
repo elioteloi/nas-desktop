@@ -62,3 +62,91 @@ img#file {
     border-radius: 6px;
 }
 
+#modalFolder {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    display: grid;
+}
+
+input#inputFolder {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+    width: 185px;
+    height: 18px;
+}
+
+#buttonCreateFolder {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#goBack {
+    padding: 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+div#div-image {
+    display: flex;
+}
+
+div#container {
+    padding: 10px;
+}
+
+div#divButton {
+    display: grid;
+    justify-content: center;
+}
+
+button#buttonEdit {
+    height: 39px;
+    width: 200px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #F5F5F5;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+button#buttonDelete {
+    height: 39px;
+    width: 200px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #F5F5F5;
+    font-size: 15px;
+}
+
+button#buttonEdit:hover {
+    height: 39px;
+    width: 200px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #dddddd;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+button#buttonDelete:hover {
+    height: 39px;
+    width: 200px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #dddddd;
+    font-size: 15px;
+}
