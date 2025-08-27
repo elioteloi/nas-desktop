@@ -1,5 +1,5 @@
 {
-  "name": "Drive",
+  "name": "drive",
   "version": "1.0.0",
   "description": "A simple cross-platform app for a NAS (Network-attached storage).",
   "license": "ISC",
@@ -21,11 +21,21 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.8.1",
     "@electron-forge/plugin-fuses": "^7.8.1",
     "@electron/fuses": "^1.8.0",
-    "electron": "^36.2.1"
+    "electron": "^36.7.4",
+    "electron-packager": "^17.1.2"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
     "electron-squirrel-startup": "^1.0.1",
     "electron-store": "^10.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elioteloi/nas-desktop.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/elioteloi/nas-desktop/issues"
+  },
+  "homepage": "https://github.com/elioteloi/nas-desktop#readme"
 }

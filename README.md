@@ -1,15 +1,14 @@
 # nas-desktop
 
-A Front-End desktop app for a NAS (Network-attached storage) created in Electron using HTML, CSS and Typescript. 
+A Front-End desktop app for a NAS (Network-attached storage) created in Electron using HTML, CSS and Typescript.
 
 ## Features
 
 - User creation
 - User authentication
 - Folder creation
-- Renaming folder and files 
+- Renaming folder and files
 - File uploads
-
 
 ---
 
@@ -21,6 +20,7 @@ A Front-End desktop app for a NAS (Network-attached storage) created in Electron
 - JavaScript
 - LocalStorage
 - Electron
+
 ---
 
 ## Getting Started
@@ -42,4 +42,10 @@ npm install
 
 ```bash
 npm start
+```
+
+### 4. Creating a distributable
+
+```bash
+npm run make
 ```
